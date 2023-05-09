@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { RefreshHome } from "./Views/refesh-view";
 import CreditCardUi from "./components/CreditCardUi";
 import Home from "./components/Home";
+import Users from "./components/Users";
 
 function App() {
   return (
@@ -23,14 +24,17 @@ function App() {
     //     <CreditCardUi />
     //   </div>
     // ),
-    (
-      <div className="container mt-5">
-        <h2 className="mb-4">
-          React Js Add Class to Div On Window Scroll Example
-        </h2>
-        <Home />
-      </div>
-    )
+    // (
+    //   <div className="container mt-5">
+    //     <h2 className="mb-4">
+    //       React Js Add Class to Div On Window Scroll Example
+    //     </h2>
+    //     <Home />
+    //   </div>
+    // )
+    <div>
+      <Users />
+    </div>
   );
 }
 
