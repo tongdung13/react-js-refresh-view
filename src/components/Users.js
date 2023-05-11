@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import MyDocument from "./MyDocument";
+import ReactPDF, { PDFViewer } from "@react-pdf/renderer";
+
+ReactPDF.renderToStream(<MyDocument />);
 function Users() {
   const Endpoint = "https://jsonplaceholder.typicode.com/users";
   const [userData, setUserData] = useState([]);
@@ -22,9 +26,14 @@ function Users() {
       window.removeEventListener("load", getUserData);
     };
   }, [userData]);
+
+  <PDFViewer>
+    <MyDocument />
+  </PDFViewer>;
   return (
     <div className="container mt-5">
       <h2 className="mb-4">React Read Dynamic List Values Example</h2>
+
       {userData.map((item) => {
         return (
           <li className="card p-3 mb-2" key={item.id}>

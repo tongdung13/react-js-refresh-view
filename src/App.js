@@ -1,9 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { RefreshHome } from "./Views/refesh-view";
-import CreditCardUi from "./components/CreditCardUi";
-import Home from "./components/Home";
-import Users from "./components/Users";
+import MyDocument from "./components/MyDocument";
+import DocPdf from "./components/DocPdf";
 
 function App() {
   return (
@@ -32,8 +29,8 @@ function App() {
     //     <Home />
     //   </div>
     // )
-    <div>
-      <Users />
+    <div className="App">
+      <DocPdf />
     </div>
   );
 }
