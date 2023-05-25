@@ -4,13 +4,16 @@ import ReactDOMServer from "react-dom/server";
 export default function DocPdf() {
   const exportPDF = () => {
     let element = (
-      <div style={{ display: "flex", flexWrap: "wrap" }}>Sample Text</div>
+      <div style={{ width: '1000px' }}>
+        <h1 style={{ marginLeft: '47px' }}>Table Pdf</h1>
+      </div>
     );
     const doc = new jsPDF("p", "pt", "letter");
     doc.html(ReactDOMServer.renderToString(element), {
       callback: function (doc) {
-        doc.save('sample.pdf');
-      }
+        doc.setTextColor(255, 0, 0);
+        doc.save("sample.pdf");
+      },
     });
   };
 
