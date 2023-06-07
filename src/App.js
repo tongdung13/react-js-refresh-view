@@ -1,6 +1,7 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import DocPdf from "./components/DocPdf";
+import RefreshApp from "./Views/refesh-view";
 
 function App() {
   return (
@@ -30,7 +31,7 @@ function App() {
     //   </div>
     // )
     <div className="App">
-      <DocPdf />
+      <RefreshApp />
     </div>
   );
 }
