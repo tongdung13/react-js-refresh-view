@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { useReactToPrint } from 'react-to-print';
-import { ComponentToPrint } from '../components/ComponentToPrint';
+// import { ComponentToPrint } from '../components/ComponentToPrint';
 
 
 
@@ -12,7 +12,7 @@ const Example = () => {
 
   return (
     <div>
-      <ComponentToPrint ref={componentRef} />
+      {/* <ComponentToPrint ref={componentRef} /> */}
       <button onClick={handlePrint}>Print this out!</button>
     </div>
   );

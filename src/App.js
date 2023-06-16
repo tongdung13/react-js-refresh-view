@@ -1,6 +1,6 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import DocPdf from "./components/DocPdf";
+import MyPdfViewer from "./components/DocPdf";
 import RefreshApp from "./Views/refesh-view";
 import Example from "./components/print";
 
@@ -33,7 +33,7 @@ function App() {
     //   </div>
     // )
     <div className="App">
-      <Example />
+      <MyPdfViewer />
     </div>
   );
 }
