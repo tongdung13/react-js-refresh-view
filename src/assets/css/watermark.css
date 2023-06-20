@@ -41,7 +41,7 @@
 
 .watermark__body {
     /* Text color */
-    color: rgba(0, 0, 0, 0.2);
+    color: rgba(0 0 0 / 18%);
 
     /* Text styles */
     font-size: 3rem;
