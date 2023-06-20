@@ -33,7 +33,7 @@ function App() {
     //   </div>
     // )
     <div className="App">
-      <MyPdfViewer />
+      <RefreshApp />
     </div>
   );
 }

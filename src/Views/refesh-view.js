@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Watermark from "@uiw/react-watermark";
+import '../assets/css/watermark.css';
 
 export function RefreshHome() {
   const refreshPage = () => {
@@ -43,23 +44,31 @@ class RefreshApp extends React.Component {
 
   render() {
     return (
-      <Watermark
-        content="UIW Watermark"
-        // rotate={20}
-        // gapY={0}
-        gapX={95}
-        width={200}
-        gapY={180}
-        height={150}
-        fontSize={22}
-        fontColor="rgb(255 0 0 / 25%)"
-        style={{ background: "#fff" }}
-      >
+      // <Watermark
+      //   content="UIW Watermark"
+      //   // rotate={20}
+      //   // gapY={0}
+      //   // gapX={95}
+      //   width={200}
+      //   // gapY={180}
+      //   height={150}
+      //   fontSize={22}
+      //   fontColor="rgb(255 0 0 / 25%)"
+      //   style={{ background: "#fff" }}
+      // >
+      <div class="watermark">
+        {/* <!-- Watermark container --> */}
+        <div class="watermark__inner">
+          {/* <!-- The watermark --> */}
+          <div class="watermark__body">Draft</div>
+        </div>
         <div style={{ height: "100%" }}>
           <h1>{Math.random()}</h1>
           <button onClick={this.handleRefresh}>Refresh component</button>
         </div>
-      </Watermark>
+      </div>
+
+      // </Watermark>
     );
   }
 }
