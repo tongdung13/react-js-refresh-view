@@ -32,6 +32,7 @@ export function RefreshValue() {
       rotate="0"
       textSize="40"
       wrapperStyle
+      fontFamily="Helvetica"
       // multiline="true"
       gutter="center"
     >
