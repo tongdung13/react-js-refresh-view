@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import Watermark from "@uiw/react-watermark";
-import '../assets/css/watermark.css';
+// import Watermark from "@uiw/react-watermark";
+import "../assets/css/watermark.css";
+import { Watermark } from "@hirohe/react-watermark";
 
 export function RefreshHome() {
   const refreshPage = () => {
@@ -24,10 +25,21 @@ export function RefreshValue() {
   };
 
   return (
-    <div>
-      <p>{Math.random()}</p>
-      <button onClick={refresh}>Refresh component</button>
-    </div>
+    <Watermark
+      text="test Tong Dung"
+      textColor="black"
+      lineHeight="100%"
+      rotate="0"
+      textSize="40"
+      wrapperStyle
+      // multiline="true"
+      gutter="center"
+    >
+      <div>
+        <p>{Math.random()}</p>
+        <button onClick={refresh}>Refresh component</button>
+      </div>
+    </Watermark>
   );
 }
 const style = {

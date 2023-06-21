@@ -1,11 +1,11 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import MyPdfViewer from "./components/DocPdf";
-import RefreshApp from "./Views/refesh-view";
-import Example from "./components/print";
+// import MyPdfViewer from "./components/DocPdf";
+// import RefreshApp from "./Views/refesh-view";
+// import Example from "./components/print";
+import { RefreshValue } from "./Views/refesh-view";
 
 function App() {
-  
   return (
     // (
     // <BrowserRouter>
@@ -33,7 +33,7 @@ function App() {
     //   </div>
     // )
     <div className="App">
-      <RefreshApp />
+      <RefreshValue />
     </div>
   );
 }
